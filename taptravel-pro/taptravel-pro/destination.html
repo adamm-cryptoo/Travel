@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TapTravel: book trips with prices, rules and local details up front.">
+<title>Destination | TapTravel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@500;700&family=Cinzel:wght@600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="destination">
+<div id="hdr"></div>
+<main>
+<div class="hero"><div class="w"><div><h1 id="name"></h1><p class="lead" id="tag"></p></div><div class="wm" id="wm" aria-hidden="true"></div></div>
+<div class="w" style="display:block"><div class="ticket"><div><div class="route"><span>You</span><i></i><span id="dest"></span></div>
+<div class="facts"><div><b>Best time</b><span id="best"></span></div><div><b>Language</b><span id="lang"></span></div></div></div>
+<div class="stub"><span class="sm">From, per person</span><div class="price" id="from"></div><button class="btn" id="open">Request this trip</button></div></div></div></div>
+<section class="sec"><div class="w cols">
+<div><h2>About this trip</h2><p id="about"></p><h2 style="margin-top:30px">Highlights</h2><ul class="clean" id="hi"></ul><h2 style="margin-top:30px">Local rules and basics</h2><table><tbody id="rules"></tbody></table></div>
+<div class="panel" id="est"><h3>Estimate your trip</h3><p class="muted sm">Flights and hotel, per traveller.</p>
+<label for="trav">Travellers</label><input id="trav" type="number" min="1" max="9" value="2">
+<label for="nights">Nights</label><input id="nights" type="number" min="3" max="21" value="5">
+<label for="plan">Plan</label><select id="plan"><option value="0">Free</option><option value="10">Explorer (10% off)</option><option value="15">Globetrotter (15% off)</option></select>
+<label for="promo">Promo code</label><input id="promo" placeholder="Black Friday code">
+<p class="total" id="total" style="margin-top:16px" aria-live="polite"></p><p class="sm muted" id="note"></p></div>
+</div></section>
+<section class="sec" style="padding-top:0"><div class="w"><h2>More places</h2><div class="grid" id="more"></div></div></section>
+</main>
+<dialog id="req"><form id="reqform"><h3>Request this trip</h3>
+<label for="fname">Full name</label><input id="fname" required autocomplete="name">
+<label for="email">Email</label><input id="email" type="email" required autocomplete="email">
+<label for="dob">Date of birth (18+ to book)</label><input id="dob" type="date" required>
+<p id="msg" role="status"></p><p style="margin-top:14px"><button class="btn">Send request</button> <button class="btn ghost" type="button" id="close">Close</button></p></form></dialog>
+<div id="ftr"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

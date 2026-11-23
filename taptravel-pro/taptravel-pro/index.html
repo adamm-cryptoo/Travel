@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TapTravel: book trips with prices, rules and local details up front.">
+<title>Book trips | TapTravel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@500;700&family=Cinzel:wght@600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+<div id="hdr"></div>
+<main>
+<div class="hero"><div class="w">
+  <div><h1>Pick a place. We set the scene.</h1>
+  <p class="lead">Book flights and stays in one tap. Every destination comes with its own look and the local rules you need before you go.</p>
+  <a class="btn" href="destinations.html">Browse destinations</a><a class="btn ghost" href="offers.html">Black Friday offers</a></div>
+  <div><div class="board" role="list" aria-label="Departures"><div class="bh"><span>Departures</span><span>Price per person</span></div><div id="board"></div></div><p id="now" class="muted sm" aria-live="off" style="margin-top:12px"></p></div>
+</div></div>
+<section class="sec"><div class="w three">
+  <div><h3>Prices up front</h3><p>Flights and stays are bundled, so the price you see is the price you compare.</p></div>
+  <div><h3>Rules explained</h3><p>Legal ages, currency and language sit on every destination page.</p></div>
+  <div><h3>Flexible plans</h3><p>Premium members get member-only prices and longer free cancellation.</p></div>
+</div></section>
+<section class="sec" style="padding-top:0"><div class="w"><h2>Popular right now</h2><div class="grid" id="pop"></div></div></section>
+<section class="sec" style="padding-top:0"><div class="w"><div class="band"><div><h2>Black Friday: up to 35% off</h2><p>Offers end 30 November. One code per booking.</p></div><a class="btn y" href="offers.html">See the offers</a></div></div></section>
+</main>
+<div id="ftr"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
